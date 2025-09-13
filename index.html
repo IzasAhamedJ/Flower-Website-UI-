@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* Optional: includes padding and border within an element's total width and height */
+    }
+
+    body {
+        font-family: "Outfit", sans-serif;
+        /* font-optical-sizing: auto; */
+        font-style: normal;
+
+    }
+
+    .baseBg {
+        background-color: #056608;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0.0;
+
+        }
+    }
+
+    .blink {
+        animation: blink 1s step-start 0s infinite;
+        color: yellow;
+    }
+
+    .input-size input {
+        width: 38rem;
+        border-bottom: 2px solid #056608;
+        outline: none !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .flowerCommonSpan {
+        padding: 0.5vw 0.7vw;
+        border-radius: 50px;
+        font-size: 0.8vw;
+        margin-left: 1rem;
+    }
+
+    .flowerCommonSpan:hover {
+        background-color: #056608;
+        color: #fff;
+        transition: .5s ease-in-out;
+    }
+
+
+    .common-heading {
+        background: linear-gradient(to right, #f32170,
+                #ff6b08, #cf23cf, #eedd44);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .deliverFlower div {
+        display: inline-block;
+        /* Makes child items display in a single line */
+        /* Optional: Add styling for your individual items */
+        padding: 10px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+
+    <div class="header">
+        <div class="flex flex-col md:flex-row items-center justify-between baseBg p-2">
+            <div class="text-white text-sm">
+                #1 Local Florist in Chennai since 2001
+            </div>
+            <div class="text-white text-sm">
+                Upcoming Events :
+                <span class="blink"> Diwali | Bhai Dooj</span>
+            </div>
+            <div class="text-white text-sm">
+                Send Flowers to Chennai Same Day - Free Delivery
+            </div>
+        </div>
+
+        <div class="logo-content p-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div>
+                    <img src="https://www.chennaionlineflorists.com/images/chennai_logo_new.webp" alt="" width="200">
+                    <p class="logo-txt">
+                        <img src="https://www.chennaionlineflorists.com/images/belowlogo-tamiltext.webp" alt=""
+                            width="300">
+                    </p>
+                </div>
+                <div class="input-size position-relative p-2">
+                    <input type="text" name="" id="" placeholder="Search For Gifts">
+                    <div class="position-absolute top-0 end-0">
+                        <img src="https://www.chennaionlineflorists.com/images/search-icon.webp" alt="" width="25"
+                            height="28">
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="" class="">
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/login-icon-header.webp" alt=""
+                                width="20" height="30">
+                            <div class="text-black text-sm">
+                                Login
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="">
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/cart-icon-header.webp" alt=""
+                                width="25" height="30">
+                            <div class="text-black text-sm">
+                                Cart
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="" class="">
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/truck-icon-header.webp" alt=""
+                                width="28" height="24">
+                            <div class="text-black text-sm">
+                                Track Order
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="">
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/help-icon-header.webp" alt=""
+                                width="12" height="34">
+                            <div class="text-black text-sm">
+                                Help
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <section class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-md-8 d-none d-md-flex" type="button">
+                <span class="text-gray-500 border flowerCommonSpan">
+                    Rose
+                </span>
+                <span class="text-gray-500 border flowerCommonSpan">
+                    Flowers & Cakes
+                </span>
+                <span class="text-gray-500 border flowerCommonSpan">
+                    Flowers width Teddy
+                </span>
+                <span class="text-gray-500 border flowerCommonSpan">
+                    Birthday Flowers
+                </span>
+                <span class="text-gray-500 border flowerCommonSpan">
+                    Anniversary Flowers
+                </span>
+
+                <span class="text-gray-500 border px-2 flowerCommonSpan">
+                    Wedding Flowers
+                </span>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end">
+                <div class="flex items-center gap-2">
+                    <div class="text-sm border flex gap-2 p-2">
+                        <img src="https://www.chennaionlineflorists.com/images/features-icon.webp" alt="">
+                        Sort By Features
+                    </div>
+                    <div>
+                        <div class="text-sm border flex gap-2 p-2">
+                            <img src="https://www.chennaionlineflorists.com/images/features-icon.webp" alt="">
+                            Show Filters
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="banner mb-3">
+            <div>
+                <img src="https://www.chennaionlineflorists.com/images/COF-top-banner-homepage-new.webp" alt="">
+            </div>
+        </div>
+
+
+        <div class="flower-deliveries mb-3">
+            <div class="text-center py-4">
+                <h1 class="common-heading text-2xl font-serif">Flowers Delivery In Chennai</h1>
+            </div>
+            <div>
+                <div class="overflow-x-auto" style="scrollbar-width: none;">
+                    <div class="flex items-center gap-3 w-max text-center">
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-rose.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                            <div class="text-lg font-serif ">
+                                Rose
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-lily.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Lilly
+                            </div>
+                        </div>
+                        <div >
+                            <img src="https://www.chennaionlineflorists.com/images/COF-carnation.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Carnation
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-orchids.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Orchids
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-mixedflower.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Mixed Flowers
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-gerbera.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Gerbera
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-anthurium.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Anthurium
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://www.chennaionlineflorists.com/images/COF-rose.webp" alt="" class="hover:-translate-y-4 transition duration-300 ease-in">
+                             <div class="text-lg font-serif ">
+                                Rose
+                            </div>
+                        </div>
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fresh-flowers mt-3">
+            <div class="text-center py-4">
+                <h1 class="common-heading text-2xl font-serif">Best Selling Flowers</h1>
+            </div>
+
+            <div class="fresh-flowers-card">
+                <div class="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-4">
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND2533.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 1000</span><span class="text-gray-400 line-through">
+                                    &#8377; 1500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND2849.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 2000</span><span class="text-gray-400 line-through">
+                                    &#8377; 3500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND16958.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 500</span><span class="text-gray-400 line-through">
+                                    &#8377; 1500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND13595.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 2000</span><span class="text-gray-400 line-through">
+                                    &#8377; 2500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND16529.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 800</span><span class="text-gray-400 line-through">
+                                    &#8377; 1200
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND14218.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 1000</span><span class="text-gray-400 line-through">
+                                    &#8377; 1500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND15540.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 2000</span><span class="text-gray-400 line-through">
+                                    &#8377; 3000
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg flex flex-column  relative">
+                        <img src="https://www.chennaionlineflorists.com/uploaded/product/IND14032.webp" alt="" class="">
+                        <div class="p-3">
+                            <p class="flower-content text-gray-600">
+
+                                Arrangement of Bird of Paradise and Anthuriums with 16 pcs Ferrero Rocher..
+                            </p>
+                            <div class="price">
+                                <span class="fw-bold">&#8377; 1000</span><span class="text-gray-400 line-through">
+                                    &#8377; 1500
+                                </span>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                         <div class="absolute top-0 left-0 text-white rounded-br-lg p-2 baseBg">
+                             30% Offer
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="relation-gift mt-3">
+                <div class="text-center py-4">
+                    <h1 class="common-heading text-2xl font-serif">Perfect Gift By Relation</h1>
+                </div>
+                <div>
+                    <div class="grid grid-cols-3 lg:grid-cols-8  sm:grid-cols-4 text-center">
+                         <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Boyfriend.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Brother
+                            </div>
+                         </div>
+                          <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Girlfriend.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Girl Friend
+                            </div>
+                         </div>
+                          <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Husband.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Husband
+                            </div>
+                         </div>
+                          <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Wife.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Wife
+                            </div>
+                         </div>
+                          <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Him.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Him
+                            </div>
+                         </div>
+                          <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Her.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Her
+                            </div>
+                         </div>
+                         <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Kids.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Kids
+                            </div>
+                         </div>
+                         <div class="">
+                            <img src="https://www.chennaionlineflorists.com/images/Parents.webp" alt="" class="w-40 rounded-full">
+                            <div class="text-lg font-serif ">
+                                Parents
+                            </div>
+                         </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
